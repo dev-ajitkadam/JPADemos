@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./Style/index.css">
+</head>
+<body>
+    <div class="container">
+    
+        <div class="category">
+            <h2>Select a Category</h2>
+            <button class="btn-category" >JAVA</button>
+            <button class="btn-category" >PYTHON</button>
+            <button class="btn-category" >JAVASCRIPT</button>
+            <button class="btn-category" >HTML</button>
+        </div>
+        
+        <button class="enter-btn" onclick="lodeQuestion()">Enter</button>
+        <hr>
+        <h2>User Test History</h2>
+        <div class="history-data">
+            <table className="table table-striped p-3 ">
+                <thead class="thead">
+                  <tr>
+                  <th>#</th>
+                    <th>Name</th>
+                    <th>Number</th>
+                    <th>Total Time Taken</th>
+                    <th>Attempted Question</th>
+                    <th>Correct Answer</th>
+                    <th>Percentage%</th>
+                  </tr>
+                </thead>
+               
+                
+                <tbody class="data-show">
+                  
+                  
+                </tbody>
+              </table>
+
+        </div>
+
+    </div>
+
+    <script src="./js/category.js"></script>
+</body>
+</html>

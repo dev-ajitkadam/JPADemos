@@ -1,0 +1,232 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 40%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.logo {
+    width: 110px;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: #0ad0f4;
+    margin: 15px;
+}
+
+h4 {
+    color: gray;
+}
+
+
+
+/* Homepage css */
+#username {
+    width: 25rem;
+    height: 2rem;
+    margin-right: 1rem;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+#number{
+    width: 25rem;
+    height: 2rem;
+    margin-right: 1rem;
+    border: 2px solid gray;
+    border-radius: 5px;
+
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    height: 2.1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #0ad0f4;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-category {
+    background-color: #d0f2f8;
+    color: black;
+    border: 3px solid #0ad0f4;
+    border-radius: 0.7rem;
+    width: 15rem;
+    height: 3rem;
+    margin: 1rem 2rem;
+    text-wrap: wrap;
+    font-size: medium;
+}
+
+.category {
+    display: block;
+}
+
+button:hover {
+    background-color: #0ad0f4;
+    color: white;
+}
+.thead{
+    background-color: #00d1f5;
+    
+}
+
+
+/* Quiz page styling */
+.container-time {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.timer {
+    padding: 0 15px;
+    border: 3px solid #0ad0f4;
+    border-radius: 50%;
+}
+
+#content {
+    padding: 15px;
+    padding-top: 25px;
+    border: 3px solid #0ad0f4;
+    border-radius: 10px;
+}
+
+.options {
+    width: 15rem;
+    height: 3rem;
+    margin: 1.5rem;
+    font-size: medium;
+    border: 2px solid #0ad0f4;
+    border-radius: 25rem;
+    background-color: white;
+    color: #00d1f5;
+}
+
+.next-btn, .Result-btn {
+    width: 15rem;
+    height: 3rem;
+    margin: 1.5rem;
+    font-size: large;
+    border: 2px solid #0ad0f4;
+    border-radius: 15px;
+    background-color: #05c4e6;
+    color: white;
+}
+
+.bolds{
+    font-weight: bold;
+}
+
+.q-totalQ {
+    position: relative;
+    top: 42px;
+    left: 45%;
+    z-index: 3;
+}
+
+.q-totalQ > h3 {
+    border: 3px solid #0ad0f4;
+    border-radius: 50%;
+    width: 50px;
+    padding: 10px 5px;
+    background-color: white;
+}
+
+.q-container {
+    margin: 0;
+}
+
+
+
+/* Responsive styling */
+@media (max-width: 1024px) {
+    .container {
+        width: 60%;
+        padding: 15px;
+    }
+
+    #username {
+        width: 20rem;
+    }
+
+    .btn-category, .options, .next-btn, .Result-btn {
+        width: 12rem;
+        font-size: small;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+        padding: 15px;
+    }
+
+    #username {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .btn-category, .options, .next-btn, .Result-btn {
+        width: 100%;
+        font-size: small;
+        height: 2.5rem;
+        margin: 10px 0;
+    }
+
+    .q-totalQ {
+        left: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h1, h2 {
+        font-size: 1.2rem;
+    }
+
+    .timer {
+        padding: 0 10px;
+    }
+
+    .q-totalQ {
+        top: 42px;
+        left: 87%;
+        transform: translateX(-50%);
+    }
+
+    .btn-category, .options, .next-btn, .Result-btn {
+        width: 100%;
+        font-size: small;
+        margin: 5px 0;
+    }
+}
